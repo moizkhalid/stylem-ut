@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS code goes here */
+
+/* 1f5ca4 - blue
+
+ed303b -red */
+.font-\[Nunito\] {
+  font-family: "Nunito Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* HOME BANNER SLIDER  */
+.banner-slider ul.slick-dots li button,
+.product-slider ul.slick-dots li button {
+  font-size: 0;
+  background: transparent;
+  width: 22px;
+  height: 3px;
+  opacity: 0.2;
+  z-index: 1;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+}
+.banner-slider ul.slick-dots li.slick-active button,
+.product-slider ul.slick-dots li.slick-active button {
+  background-color: white;
+  opacity: 1;
+}
+.banner-slider ul.slick-dots,
+.product-slider ul.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 12px;
+}
+.sec-underline:after {
+  content: "";
+  background: #ed303b;
+  width: 20%;
+  height: 4px;
+  opacity: 0.8;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.flex.items-center.justify-between.text-white.max-w-\[1520px\].mx-auto {
+  display: flex !important;
+}
+.light-product-banner ul.slick-dots li button {
+  opacity: 1;
+  background-color: #939494;
+}
+.light-product-banner ul.slick-dots li.slick-active button {
+  opacity: 1;
+  background-color: #000;
+}
+
+@media (max-width: 1020px) {
+  .nav-menu {
+    /* max-height: 0 !important; */
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-menu ul {
+    max-height: 0;
+    transition: 0.3s;
+    overflow-y: hidden;
+  }
+
+  .nav-menu.opened ul {
+    max-height: 500px;
+    transition: 0.3s;
+  }
+
+  .nav-menu.opened {
+    max-height: 1000px !important;
+    z-index: 1;
+  }
+  .nav-menu ul {
+    background-color: #3d4e62;
+  }
+  .nav-menu ul li a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .nav-menu ul li:last-child a {
+    border: 0;
+  }
+  .nav-menu ul li a:before {
+    content: none;
+  }
+}

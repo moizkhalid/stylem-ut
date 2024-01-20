@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body class="font-[Nunito]">
+    <!-- HEADER -->
+    <header class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div class="lg:flex items-center justify-between text-white w-full pt-3 px-2 md:px-0">
+        <div class="flex w-full lg:w-fit justify-between items-center">
+          <a href="#"><img src="./dist/images/stylem-logo.png" class="w-48 md:w-auto" alt="Stylem Logo" /></a>
+          <div class="inline-block lg:hidden burger-menu">
+            <div class="bar1 w-9 h-1 bg-[#ed303b] my-2 transition-all rounded-md"></div>
+            <div class="bar2 w-9 h-1 bg-[#ed303b] my-2 transition-all rounded-md"></div>
+            <div class="bar3 w-9 h-1 bg-[#ed303b] my-2 transition-all rounded-md"></div>
+          </div>
+        </div>
+        <nav class="nav-menu bg-white lg:bg-transparent relative lg:top-0 w-full">
+          <ul class="lg:flex items-center gap-6 absolute lg:relative top-4 lg:top-0 bg-[#1C1C1E] lg:bg-transparent w-full lg:p-0 rounded-sm lg:rounded-none justify-end">
+            <li class="relative">
+              <a href="#home-banner" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent text-[#1f5ca4] text-lg font-bold before:bg-[#1f5ca4] before:w-[1px] before:absolute before:h-6 before:right-[-15px] before:top-[10px] before:translate-x-1/2">Home</a>
+            </li>
+            <li class="relative">
+              <a href="#about-us" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent text-[#ed303b] text-lg font-bold before:bg-[#1f5ca4] before:w-[1px] before:absolute before:h-6 before:right-[-15px] before:top-[10px] before:translate-x-1/2">About us</a>
+            </li>
+            <li class="relative">
+              <a href="#products" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent text-[#1f5ca4] text-lg font-bold before:bg-[#1f5ca4] before:w-[1px] before:absolute before:h-6 before:right-[-15px] before:top-[10px] before:translate-x-1/2">Products</a>
+            </li>
+            <li class="relative">
+              <a href="#contact-us" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent text-[#ed303b] text-lg font-bold">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HOME BANNER SECTION -->
+    <section class="relative sec-underline" id="home-banner">
+      <div class="banner-slider">
+        <img src="./dist/images/main-banner-1.jpg" alt="level up the way you live" />
+        <img src="./src/images/main-banner-2-min.jpg" class="lazy-img loaded-image" data-lazy="./dist/images/main-banner-2.jpg" alt="level up the way you live" />
+        <img src="./src/images/main-banner-3-min.jpg" data-lazy="./dist/images/main-banner-3.jpg" class="lazy-img loaded-image" alt="level up the way you live" />
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section class="relative sec-underline" id="about-us">
+      <div class="bg-[url('/dist/images/about-banner.jpg')] bg-center bg-cover text-center py-20">
+        <h1 class="text-[#1f5ca4] leading-tight font-bold text-3xl lg:text-5xl">About <span class="bg-[#ed303b] text-white px-4 py-[2px] rounded-full shadow-xl">Stylem?</span></h1>
+        <h4 class="mt-8 max-w-[970px] mx-auto text-lg lg:text-2xl font font-medium leading-8 px-3 lg:px-0">Stylem is a place that lets you find for you and your home the style that defines how you look at life. It is a collage of select yet best-in-class home and lifestyle products that showcase your selection of convenience in every aspect of living.</h4>
+      </div>
+    </section>
+    <!-- PRODUCT SECTIONS -->
+    <!-- PRODUCT 1 -->
+    <section class="relative sec-underline bg-[url('/dist/images/color-bg.jpg')] bg-center bg-cover py-12" id="products">
+      <div class="product-slider">
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Home Textile</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Stylem brings it all. From a large genre of towels Comforters, and bed sheets to an extended variety of pillows, blankets, and mattress pads and protectors A level-up for sure.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3" src="./dist/images/new-home-textile-1.png" alt="home textile" />
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Home Textile</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Stylem brings it all. From a large genre of towels Comforters, and bed sheets to an extended variety of pillows, blankets, and mattress pads and protectors A level-up for sure.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img" src="./src/images/loader.svg" data-lazy="./dist/images/new-home-textile-2.png" alt="home textile" />
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Home Textile</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Stylem brings it all. From a large genre of towels Comforters, and bed sheets to an extended variety of pillows, blankets, and mattress pads and protectors A level-up for sure.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img" src="./src/images/loader.svg" data-lazy="./dist/images/new-home-textile-3.png" alt="home textile" />
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT 2 -->
+
+    <section class="relative sec-underline light-product-banner bg-[url('/dist/images/white-banner.jpg')] bg-center bg-cover py-12">
+      <div class="product-slider">
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 order-1 md:-order-none" src="./dist/images/new-plastic-1.png" alt="plasticware" />
+          <div class="pl-10 w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl text-[#1f5ca4]">Plasticware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-black before:left-[-20px] before:top-0 text-black">As diverse range of hangers for kids and adults, with or without hooks and tie bars. Food Storage containers with much more in between, from bread boxes and tumblers to cereal containers and refrigerator organizers.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img order-1 md:-order-none" src="./src/images/loader.svg" data-lazy="./dist/images/new-plastic-2.png" alt="plasticware" />
+          <div class="pl-10 w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl text-[#1f5ca4]">Plasticware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-black before:left-[-20px] before:top-0 text-black">As diverse range of hangers for kids and adults, with or without hooks and tie bars. Food Storage containers with much more in between, from bread boxes and tumblers to cereal containers and refrigerator organizers.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img order-1 md:-order-none" src="./src/images/loader.svg" data-lazy="./dist/images/new-plastic-3.png" alt="plasticware" />
+          <div class="pl-10 w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl text-[#1f5ca4]">Plasticware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-black before:left-[-20px] before:top-0 text-black">As diverse range of hangers for kids and adults, with or without hooks and tie bars. Food Storage containers with much more in between, from bread boxes and tumblers to cereal containers and refrigerator organizers.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT 3 -->
+    <section class="relative sec-underline bg-[url('/dist/images/color-bg.jpg')] bg-center bg-cover py-12">
+      <div class="product-slider">
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Metalware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Combining the best of both worlds, quality and functionality are these sauce and frying pansfollowed by the skillets Non-Sticky, pre-seasoned, lightweight, and sturdy. serving sizzles in different sizes.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3" src="./dist/images/new-metalware-1.png" alt="Metalware" />
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Metalware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Combining the best of both worlds, quality and functionality are these sauce and frying pansfollowed by the skillets Non-Sticky, pre-seasoned, lightweight, and sturdy. serving sizzles in different sizes.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img" src="./src/images/loader.svg" data-lazy="./dist/images/new-metalware-2.png" alt="Metalware" />
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between text-white max-w-[1520px] mx-auto px-2">
+          <div class="px-[20px] w-full md:w-2/5">
+            <h2 class="font-bold text-3xl lg:text-5xl">Metalware</h2>
+            <h3 class="relative text-lg lg:text-2xl font leading-8 mt-4 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0">Combining the best of both worlds, quality and functionality are these sauce and frying pansfollowed by the skillets Non-Sticky, pre-seasoned, lightweight, and sturdy. serving sizzles in different sizes.</h3>
+            <a href="#" class="bg-[#ed303b] text-white px-4 py-2 rounded-full shadow-xl leading-3" target="_blank">Download Catalogue</a>
+          </div>
+          <img class="w-full md:w-3/5 md:mt-0 mt-3 lazy-img" src="./src/images/loader.svg" data-lazy="./dist/images/new-metalware-3.png" alt="Metalware" />
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="bg-[url('/dist/images/white-banner.jpg')] bg-bottom bg-cover py-20">
+      <h3 class="text-[#1f5ca4] leading-tight font-bold text-3xl lg:text-5xl text-center"><span class="bg-[#ed303b] text-white px-4 py-[2px] rounded-full shadow-xl">Sign up</span> to Newsletter</h3>
+
+      <h5 class="mt-8 max-w-[970px] mx-auto text-lg lg:text-2xl font font-medium text-center leading-6">We'll make sure your inbox only tells you on the upcoming launches, exclusive discounts, and to do your style even better. No spam intended!</h5>
+      <form class="mt-7">
+        <div class="flex flex-wrap gap-y-6 md:gap-y-0 md:flex-nowrap items-center justify-center">
+          <div class="border-[#1f5ca4] border-2 h-14 rounded-l-full max-w-16 w-1/6 md:w-16 flex items-center justify-center mr-2">
+            <img src="./src/images/user-regular.svg" class="ml-[5px] w-7 text-[#1f5ca4]" alt="avatar" />
+          </div>
+          <input type="text" name="newsEmail" class="bg-white text-black rounded-r-full shadow-lg h-14 px-3 text-lg w-4/6 md:w-96 focus-visible:outline-none" placeholder="Enter your email address" required />
+          <button class="ml-3 w-32 shadow-lg rounded-full bg-[#1f5ca4] text-white h-14">Submit</button>
+        </div>
+      </form>
+    </section>
+    <!-- CONTACT US SECTION -->
+
+    <section class="relative bg-[url('/dist/images/color-bg.jpg')] bg-bottom bg-cover py-12 px-2" id="contact-us">
+      <div class="flex flex-col lg:flex-row items-center max-w-[1520px] mx-auto">
+        <div class="lg:w-1/2 w-full pl-[20px]">
+          <h3 class="text-[#1f5ca4] leading-tight font-bold text-3xl lg:text-5xl"><span class="bg-white text-[#1f5ca4] px-4 py-[2px] rounded-full shadow-xl">Contact Us</span></h3>
+          <h4 class="relative text-lg lg:text-2xl font leading-8 mb-9 before:block before:absolute before:content-[''] before:w-[1px] before:h-full before:bg-white before:left-[-20px] before:top-0 text-white w-full lg:w-[32rem] mt-12">Please leave us a message by filling out the form below, and we'll get back to you within 24 working hours.</h4>
+        </div>
+        <div class="lg:w-1/2 w-full">
+          <form class="bg-transparent shadow-xl">
+            <div class="p-10 flex flex-col">
+              <input type="text" name="txtFullName" class="border-b border-white text-white bg-transparent mb-10 px-2 placeholder-[#acb1b8] focus-visible:outline-none" placeholder="Name" required />
+              <input type="email" name="txtEmail" class="border-b border-white text-white bg-transparent mb-10 px-2 placeholder-[#acb1b8] focus-visible:outline-none" placeholder="Email Address" required />
+              <input type="text" name="txtPhone" class="border-b border-white text-white bg-transparent mb-10 px-2 placeholder-[#acb1b8] focus-visible:outline-none" placeholder="Phone" required />
+              <textarea name="txtMsg" class="block border-white border h-36 w-full bg-transparent placeholder-[#acb1b8] focus-visible:outline-none pl-2 pt-2 mt-5 text-white" placeholder="Message" required></textarea>
+              <button type="submit" class="w-32 shadow-lg rounded-full bg-[#ed303b] text-white h-14 mx-auto mt-7">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      //  INITIALIZE BANNER SLIDER
+      $(".banner-slider").on("init", function (event, slick) {
+        slick.$slider.on("lazyLoaded", function (event, slick, image, imageSource) {
+          $(image).removeClass("lazy-img");
+        });
+      });
+      $(".banner-slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        lazyLoad: "progressive",
+      });
+
+      //  INITIALIZE PRODUCT SLIDER
+      $(".product-slider").on("init", function (event, slick) {
+        slick.$slider.on("lazyLoaded", function (event, slick, image, imageSource) {
+          $(image).removeClass("lazy-img");
+        });
+      });
+      $(".product-slider").slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        fade: true,
+        autoplaySpeed: 3000,
+        lazyLoad: "ondemand",
+      });
+      const burgerMenu = document.querySelector(".burger-menu");
+      const navMenu = document.querySelector(".nav-menu");
+
+      burgerMenu.addEventListener("click", function () {
+        navMenu.classList.toggle("opened");
+      });
+    </script>
+  </body>
+</html>
